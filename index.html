@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <a href="#" class="logo"><span>DBC</span>&nbsp;Transport</a>
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact</a>
+        <a href="#about">About Us</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+    <!-- home section ends -->
+    <div class="hero-image">
+      <img src="hero.jpg" alt="" />
+    </div>
+    <div id="about">
+      <h1>About Us</h1>
+      <p>
+        TruckGuru is one of the foremost trucking companies, delivering the
+        plethora of transport services to its esteemed consumers across India.
+        We are the “best-in-class and cost-effective transporter” as defined by
+        our customers and serving this industry for many years. We have set high
+        standards in every facet of transportation, and strive to keep raising
+        the bar. With our extensive industry knowledge and skilled team, you can
+        completely focus on your core interests whereas leaving the tiring and
+        complex moving process on us. Time-critical? No worries – TruckGuru will
+        help you! Our company is equipped with advanced equipment, modern tools,
+        and expertise that enable us to help our consumers with crucial
+        transportation and supply chain solutions. We ensure businesses that
+        they will get excellent-quality, prompt, and secure transportation
+        services irrespective of time-constraint, the heavy load issue, and any
+        other related problem. Being the prime logistics services provider, we
+        believe that people, technology, infrastructure and expertise all work
+        together to help businesses to succeed and henceforth, we are offering
+        the right blend of all these.
+      </p>
+    </div>
+    <!--Services section starts-->
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+
+      <div class="box-container" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+        <div class="box">
+          <i class="fas fa-truck"></i>
+          <h3>Full Load Services</h3>
+          <p>
+            We provide Full Truck load transportation services with varied type
+            of trucks available with the click of a button.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-rupee-sign"></i>
+          <h3>Transparent Pricing</h3>
+          <p>
+            With our fare calculator, we instantaneously give you best possible
+            rates online.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-person-booth"></i>
+          <h3>Quick & Easy Portal</h3>
+          <p>
+            Hiring a truck is now just a click away, through our hassle free
+            online booking system.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-truck-pickup"></i>
+          <h3>Advance Booking</h3>
+          <p>
+            Our vehicle availability is guaranteed on daily/weekly/monthly basis
+            to ensure on-time reporting.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-map"></i>
+          <h3>Live Tracking</h3>
+          <p>
+            Get real time updates of your goods with our simplified technology.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>24/7 Service</h3>
+
+          <p>
+            TruckGuru is dedicated to provide exceptional customer support over
+            the Phone & Live Chat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+    <!--Brand selection starts-->
+    <section class="brand-container"data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+      <div class="heading" style="font-size: 3rem; font-weight: bolder">
+        Our Companies
+      </div>
+      <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="comb.jpeg" width="" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Brand selection ends-->
+    <!--Contact Form-->
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="contact-img.svg" alt="" />
+        </div>
+
+        <form action="javascript:send()" method="post">
+          <div class="inputBox">
+            <input
+              type="text"
+              class="form-control"
+              name="Name"
+              id="Name"
+              placeholder="Name"
+              required=""
+            />
+            <input
+              type="email"
+              class="form-control"
+              name="Sender"
+              id="Sender"
+              placeholder="Email"
+              required=""
+            />
+          </div>
+          <div class="inputBox">
+            <input type="number" id="number" placeholder="number" />
+          </div>
+          <div class="inputBox">
+            <textarea
+              name="Message"
+              class="form-control"
+              id="Message"
+              placeholder="Message"
+              required=""
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-contact">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer-distributed">
+ 
+      <div class="footer-left">
+      
+      <h3>DBC<span>Transports</span></h3>
+      
+      <p class="footer-links">
+      <a href="#">Home</a>
+      ·
+      <a href="#">Blog</a>
+      ·
+      <a href="#">Pricing</a>
+      ·
+      <a href="#">About</a>
+      ·
+      <a href="#">Faq</a>
+      ·
+      <a href="#">Contact</a>
+      </p>
+      
+      <p class="footer-company-name">dbctransports &copy; 2021</p>
+      </div>
+      
+      <div class="footer-center">
+      
+      <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>21 Revolution Street</span> Delhi, India</p>
+      </div>
+      
+      <div>
+      <i class="fa fa-phone"></i>
+      <p>+1 555 123456</p>
+      </div>
+      
+      <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:manjeetdhanova@outlook.com">Contact us through mail.</a></p>
+      </div>
+      
+      </div>
+      
+      <div class="footer-right">
+      
+      <p class="footer-company-about">
+      <span>About the company</span>
+      We provide the dedicated services to our companies and provide service 24*7.
+      </p>
+      
+      <div class="footer-icons">
+      
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+      
+      </div>
+      
+      </div>
+      
+      </footer>
+      <!--Footer ends-->
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendmail() {
+        var name = $("#Name").val();
+        var email = $("#Sender").val();
+        var subject = $("#Subject").val();
+        var message = $("#Message").val();
+
+        // var body = $('#body').val();
+
+        var Body =
+          "Name: " +
+          name +
+          "<br>Email: " +
+          email +
+          "<br>Subject: " +
+          subject +
+          "<br>Message: " +
+          message;
+        //console.log(name, phone, email, message);
+
+        Email.send({
+          Host: "smtp.yourisp.com",
+          Username: "20dcs135@charusat.edu.in",
+          Password: "manav@1701",
+          To: email,
+          From: "20dcs135@charusat.edu.in",
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => {
+          //console.log (message);
+          if (message == "OK") {
+            alert("Your mail has been send. Thank you for connecting.");
+          } else {
+            console.error(message);
+            alert("There is error at sending message. ");
+          }
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
