@@ -87,13 +87,13 @@ header .logo span{
   color:var(--orange);
 }
 
-header .navbar a{
+header .navbari a{
   color:#fff;
   font-size: 2rem;
   margin:0 .8rem;
 }
 
-header .navbar a:hover{
+header .navbari a:hover{
   color:var(--orange);
 }
 
@@ -496,7 +496,7 @@ footer{
     }
 
   
-    header .navbar{
+    header .navbari{
       position: absolute;
       top:100%; right:0; left: 0;
       background: #333;
@@ -505,11 +505,11 @@ footer{
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
   
-    header .navbar.active{
+    header .navbari.active{
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   
-    header .navbar a{
+    header .navbari.active a{
       display: block;
       border-radius: .5rem;
       padding:1.5rem;
