@@ -9,7 +9,9 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
@@ -46,7 +48,7 @@
     <div class="hero-image">
       <img src="hero.jpg" alt="" />
     </div>
-    <div id="about">
+ <!---  <div id="about">
       <h1>About Us</h1>
       <p>
         DBC Transport is one of the foremost trucking companies, delivering the
@@ -67,7 +69,44 @@
         together to help businesses to succeed and henceforth, we are offering
         the right blend of all these.
       </p>
+    </div> -->
+    <div class="section">
+      <div class="container">
+        <div class="content-section">
+          <div class="title">
+            <h1>About Us</h1>
+          </div>
+          <div class="content">
+            <p>DBC Transport is one of the foremost trucking companies, delivering the
+              plethora of transport services to its esteemed consumers across Gujarat.
+              We are the “best-in-class and cost-effective transporter” as defined by
+              our customers and serving this industry for many years. We have set high
+              standards in every facet of transportation, and strive to keep raising
+              the bar. With our extensive industry knowledge and skilled team, you can
+              completely focus on your core interests whereas leaving the tiring and
+              complex moving process on us. Time-critical? No worries – We will
+              help you! Our company is equipped with advanced equipment, modern tools,
+              and expertise that enable us to help our consumers with crucial
+              transportation and supply chain solutions. We ensure businesses that
+              they will get excellent-quality, prompt, and secure transportation
+              services irrespective of time-constraint, the heavy load issue, and any
+              other related problem. Being the prime logistics services provider, we
+              believe that people, technology, infrastructure and expertise all work
+              together to help businesses to succeed and henceforth, we are offering
+              the right blend of all these.</p>
+            <div class="button">
+              <a href="">Read More</a>
+            </div>
+          </div>
+         
+        </div>
+        <div class="image-section">
+          <img src="hero.jpg">
+        </div>
+      </div>
     </div>
+  
+    
     <!--Services section starts-->
     <section class="services" id="services">
       <h1 class="heading">
@@ -169,7 +208,7 @@
           <img src="contact-img.svg" alt="" />
         </div>
 
-        <form action="javascript:send()" method="post">
+        <form action="https://formspree.io/f/mleavowa" method="POST">
           <div class="inputBox">
             <input
               type="text"
@@ -182,25 +221,29 @@
             <input
               type="email"
               class="form-control"
-              name="Sender"
+              name="_replyto"
               id="Sender"
               placeholder="Email"
               required=""
             />
           </div>
           <div class="inputBox">
-            <input type="number" id="number" placeholder="number" />
+            <input type="number" name="Number" id="number" placeholder="number" />
           </div>
           <div class="inputBox">
-            <textarea
+            <!--<textarea
               name="Message"
               class="form-control"
               id="Message"
               placeholder="Message"
               required=""
-            ></textarea>
+            ></textarea>-->
+            <input type="text" name="Initial"placeholder="From where you want to fill the truck">
+            <input type="text" name="Final" placeholder="Enter your drop point.">
+            <input type="date" name="Date" id=""placeholder="Date">
+
           </div>
-          <button type="submit" class="btn btn-contact">Send Message</button>
+          <button type="submit" class="btn btn-contact" value="Send">Send Message</button>
         </form>
       </div>
     </section>
@@ -225,16 +268,16 @@
       
       <div>
       <i class="fa fa-phone"></i>
-      <a href="tel: +917046620044">Call us</a>
+      <a href="tel: +917046620044" style="color: aliceblue;">Call us</a>
       </div>
       <i class="fab fa-whatsapp"></i>
-      <a href="https:/wa.me/917046620044">Whatsapp us.</a>
+      <a href="https:/wa.me/917046620044" style="color: aliceblue;">Whatsapp us.</a>
       
       <div>
       <i class="fa fa-envelope"></i>
-      <p><a href="mailto:manjeetdhanova@outlook.com">Contact us through mail.</a></p>
+      <p><a href="mailto:manjeetdhanova@outlook.com" style="color: aliceblue;">Contact us through mail.</a></p>
       </div>
-      
+      <p class="us">ME Developers</p>
       </div>
       
       <!--<div class="footer-right">
@@ -246,51 +289,15 @@
       </div>
       
       </div>-->
+      <div class="us">
+        
+      </div>
       
       </footer>
       <!--Footer ends-->
 
     <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendmail() {
-        var name = $("#Name").val();
-        var email = $("#Sender").val();
-        var subject = $("#Subject").val();
-        var message = $("#Message").val();
-
-        // var body = $('#body').val();
-
-        var Body =
-          "Name: " +
-          name +
-          "<br>Email: " +
-          email +
-          "<br>Subject: " +
-          subject +
-          "<br>Message: " +
-          message;
-        //console.log(name, phone, email, message);
-
-        Email.send({
-          Host: "smtp.yourisp.com",
-          Username: "20dcs135@charusat.edu.in",
-          Password: "manav@1701",
-          To: email,
-          From: "20dcs135@charusat.edu.in",
-          Subject: "This is the subject",
-          Body: "And this is the body",
-        }).then((message) => {
-          //console.log (message);
-          if (message == "OK") {
-            alert("Your mail has been send. Thank you for connecting.");
-          } else {
-            console.error(message);
-            alert("There is error at sending message. ");
-          }
-        });
-      }
-    </script>
+  
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
